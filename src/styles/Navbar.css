@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 98%;
+  margin-top: 1%;
+  margin-left: 1%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5dddd;
+  padding: 12px 24px;
+  transition: background-color 0.3s ease, width 0.3s ease, margin 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "DM Sans", sans-serif;
+  border-radius: 12px;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  width: 100%;
+  background-color: #e8647c;
+  margin-top: 0;
+  border-radius: 0;
+  margin-left: 0;
+}
+
+.navbar.scrolled .logo-text {
+  color: #feffff;
+}
+
+.navbar.scrolled .logo-text span {
+  color: #feffff;
+}
+
+.navbar.scrolled .nav-links a {
+  color: #feffff;
+}
+
+.navbar.scrolled .cta-button {
+  background-color: #feffff;
+  color: #e8647c;
+}
+
+.logo-text {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 700;
+  color: #e8647c;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.logo-text span {
+  color: #678ac2;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.nav-links li {
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-links li:hover {
+  background-color: #f4d6d7;
+}
+
+.navbar.scrolled .nav-links li:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.nav-links a {
+  color: #e8647c;
+  text-decoration: none;
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  font-weight: 600;
+}
+
+.cta-button {
+  background-color: #e8647c;
+  color: #feffff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #678ac2;
+  color: #feffff;
+}
+
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #e8647c;
+}
+
+.nav-links.mobile {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #f5dddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-links.mobile.active {
+  display: flex;
+}

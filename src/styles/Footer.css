@@ -1,0 +1,131 @@
+.site-footer {
+  background-color: #e8647c;
+  color: #feffff;
+  font-family: "DM Sans", sans-serif;
+  padding: clamp(3rem, 5vw, 4rem) 8vw 0;
+  margin-top: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.footer-logo {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #feffff;
+}
+
+.footer-logo span {
+  color: #f5dddd;
+}
+
+.footer-section1 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.footer-cta-button {
+  background-color: #feffff;
+  color: #e8647c;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.footer-cta-button:hover {
+  background-color: #678ac2;
+  color: #feffff;
+}
+
+.footer-section2 h4,
+.footer-section3 h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #f5dddd;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-links,
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.contact-info li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 2;
+}
+
+.footer-links a {
+  color: #feffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #f5dddd;
+  text-decoration: underline;
+}
+
+.contact-info .icon {
+  margin-right: 0.5rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer-section1 {
+    flex: 1.5;
+  }
+
+  .footer-section2 {
+    flex: 1;
+    text-align: center;
+  }
+
+  .footer-section3 {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}

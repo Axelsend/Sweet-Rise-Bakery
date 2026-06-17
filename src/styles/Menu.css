@@ -1,0 +1,209 @@
+/* ── MENU PAGE ── */
+
+.menu {
+  font-family: "DM Sans", sans-serif;
+  color: #3a2a2a;
+}
+
+/* HERO */
+.menu-hero {
+  background-color: #e8647c;
+  color: #feffff;
+  padding: 120px 8vw 60px;
+  text-align: center;
+}
+
+.menu-hero h1 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.menu-hero p {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.7;
+  max-width: 580px;
+  margin: 0 auto;
+  opacity: 0.95;
+  font-style: italic;
+}
+
+/* MENU BODY */
+.menu-body {
+  padding: 60px 8vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* TABS */
+.menu-tabs {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+
+.tab-btn {
+  padding: 12px 24px;
+  border: 2px solid #e8647c;
+  border-radius: 999px;
+  background-color: transparent;
+  color: #e8647c;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tab-btn:hover {
+  background-color: #f4d6d7;
+}
+
+.tab-btn.active {
+  background-color: #e8647c;
+  color: #feffff;
+}
+
+/* MENU ITEMS */
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #f4d6d7;
+  gap: 2rem;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item-info {
+  flex: 1;
+}
+
+.menu-item-info h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #e8647c;
+  margin-bottom: 0.4rem;
+}
+
+.menu-item-info p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #5a3a3a;
+  font-style: italic;
+}
+
+.menu-item-price {
+  flex-shrink: 0;
+}
+
+.menu-item-price span {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #678ac2;
+  white-space: nowrap;
+}
+
+/* HOURS */
+.menu-hours {
+  background-color: #f5dddd;
+  padding: 80px 8vw;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hours-card,
+.order-card {
+  background-color: #feffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  flex: 1;
+  min-width: 280px;
+  max-width: 440px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+
+.hours-card h2,
+.order-card h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e8647c;
+  margin-bottom: 1.5rem;
+}
+
+.hours-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.hours-card ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #f4d6d7;
+  font-size: 0.95rem;
+}
+
+.hours-card ul li:last-child {
+  border-bottom: none;
+}
+
+.hours-note {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.order-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #5a3a3a;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn.primary {
+  background-color: #e8647c;
+  color: #feffff;
+}
+
+.btn.primary:hover {
+  background-color: #678ac2;
+}
+
+@media (max-width: 768px) {
+  .menu-hours {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

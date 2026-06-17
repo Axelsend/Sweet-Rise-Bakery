@@ -1,0 +1,244 @@
+/* ── ABOUT PAGE ── */
+
+.about {
+  font-family: "DM Sans", sans-serif;
+  color: #3a2a2a;
+}
+
+/* HERO */
+.about-hero {
+  background-color: #678ac2;
+  color: #feffff;
+  padding: 120px 8vw 60px;
+  text-align: center;
+}
+
+.about-hero-text h1 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.about-hero-text p {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto;
+  opacity: 0.95;
+  font-style: italic;
+}
+
+/* STORY */
+.about-story {
+  display: flex;
+  align-items: center;
+  gap: 6vw;
+  padding: 80px 8vw;
+  background-color: #feffff;
+}
+
+.about-story-text {
+  flex: 1.5;
+}
+
+.about-story-text h2 {
+  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-weight: 700;
+  color: #e8647c;
+  margin-bottom: 1.5rem;
+}
+
+.about-story-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #5a3a3a;
+  margin-bottom: 1.2rem;
+}
+
+.about-story-image img {
+  width: 100%;
+  max-width: 520px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.story-image-placeholder {
+  font-size: 10rem;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.1));
+}
+
+/* VALUES */
+.about-values {
+  background-color: #f5dddd;
+  padding: 80px 8vw;
+  text-align: center;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  font-weight: 700;
+  color: #e8647c;
+  margin-bottom: 3rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background-color: #feffff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e8647c;
+  margin-bottom: 0.75rem;
+}
+
+.value-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #5a3a3a;
+}
+
+/* TEAM */
+.about-team {
+  background-color: #feffff;
+  padding: 80px 8vw;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background-color: #f5dddd;
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.team-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid #e8647c;
+}
+
+.team-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #e8647c;
+  margin-bottom: 0.3rem;
+}
+
+.team-role {
+  display: block;
+  font-size: 0.9rem;
+  color: #678ac2;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.team-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #5a3a3a;
+}
+
+/* CTA */
+.about-cta {
+  background-color: #e8647c;
+  color: #feffff;
+  text-align: center;
+  padding: 80px 8vw;
+}
+
+.about-cta h2 {
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.about-cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn.primary {
+  background-color: #feffff;
+  color: #e8647c;
+}
+
+.btn.primary:hover {
+  background-color: #f5dddd;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  color: #feffff;
+  border: 2px solid #feffff;
+}
+
+.btn.secondary:hover {
+  background-color: #feffff;
+  color: #e8647c;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-story {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .story-image-placeholder {
+    font-size: 7rem;
+  }
+}
